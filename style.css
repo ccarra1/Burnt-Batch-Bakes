@@ -66,14 +66,14 @@ table {
     --crust-orange:#D2691E;
     --burnt-brown:#5A3E36;
 }
-/* GLOBAL STYLES */
+/* LAYOUT STYLES */
 html {
     background-color: var(--flour-white);
 }
 body {
     box-sizing: border-box;
 }
-#about-us {
+#about-us, #testimonials {
     background-color: var(--wheat-flax);
 }
 header, #about-us, #menu, #special-orders, #testimonials, #visit-us, #follow-us {
@@ -102,18 +102,6 @@ nav a.active, nav a:hover {
     color: var(--crust-orange);
     border-bottom: 2px solid var(--crust-orange);
 }
-main a {
-    background-color: var(--burnt-brown);
-    display: inline-block;
-    padding: 1rem;
-    border-radius: 2rem;
-    color: var(--flour-white);
-    font-family: 'trashhandregular', serif;
-    text-decoration: none;
-    text-align: center;
-    font-size: 2em;
-    margin: 1rem 0;
-}
 main a:hover {
     background-color: var(--crust-orange);
 }
@@ -136,24 +124,39 @@ main a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-#menu h2 {
+#menu h2, #testimonials h2 {
     grid-column: 1/-1;
     text-align: center;
 }
 #menu section {
     text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-}
-#menu h3 {
-    margin: 1rem 0;
 }
 #menu a {
     grid-column: 2/4;
 }
+#testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+}
 footer {
     background-color: var(--burnt-brown);
+    color: var(--flour-white);
+    margin-top: 0;
+    border-top: 1rem solid var(--burnt-brown);
+    border-bottom: 3rem solid var(--burnt-brown);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+#follow-us ul {
+    display: flex;
+}
+#follow-us svg:hover {
+    stroke: var(--crust-orange);
+}
+/* TEXT STYLES */
 h1 {
     font-family: 'trashhandregular', serif;
     font-size: 1.6em;
@@ -163,9 +166,30 @@ h2 {
     font-size: 3.5em;
     margin: .5em 0;
 }
-p {
+h3 {
+    margin: 1rem 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+p, q {
     line-height: 1.5em;
     padding: .5rem;
 }
-
-
+q {
+    font-style: italic;
+}
+main a {
+    background-color: var(--burnt-brown);
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--flour-white);
+    font-family: 'trashhandregular', serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    margin: 1rem 0;
+}
+address {
+    line-height: 2em;
+}
