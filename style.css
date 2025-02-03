@@ -2,7 +2,12 @@
 
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lacquer&display=swap');
-
+@font-face {
+    font-family: 'trashhandregular';
+    src: url('fonts/TrashHand-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* CSS REST */
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
@@ -54,10 +59,113 @@ table {
 /* ROOT VARIABLES */
 :root {
     font-family: Inter, sans-serif;
+    color: var(--burnt-brown);
     font-size: 1.25em;
     --flour-white: #FAF3E0;
+    --wheat-flax:#E9E0D3;
     --crust-orange:#D2691E;
     --burnt-brown:#5A3E36;
 }
 /* GLOBAL STYLES */
+html {
+    background-color: var(--flour-white);
+}
+body {
+    box-sizing: border-box;
+}
+#about-us {
+    background-color: var(--wheat-flax);
+}
+header, #about-us, #menu, #special-orders, #testimonials, #visit-us, #follow-us {
+    padding: 0 10rem;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: .5rem;
+}
+header img {
+    grid-column: 1/-1;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+nav a, nav a:link, nav a:visited {
+    text-decoration: none;
+    color: var(--burnt-brown);
+    font-weight: bold;
+}
+nav a.active, nav a:hover {
+    color: var(--crust-orange);
+    border-bottom: 2px solid var(--crust-orange);
+}
+main a {
+    background-color: var(--burnt-brown);
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--flour-white);
+    font-family: 'trashhandregular', serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    margin: 1rem 0;
+}
+main a:hover {
+    background-color: var(--crust-orange);
+}
+#about-us, #special-orders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#about-us img, #special-orders img {
+    margin: 2rem 0;
+}
+#about-us div, #special-orders div {
+    margin: 2rem 0;
+    align-content: space-around;
+    width: 90%;
+}
+#about-us a, #special-orders a {
+    width: 50%;
+}
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#menu h2 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+#menu section {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+#menu h3 {
+    margin: 1rem 0;
+}
+#menu a {
+    grid-column: 2/4;
+}
+footer {
+    background-color: var(--burnt-brown);
+}
+h1 {
+    font-family: 'trashhandregular', serif;
+    font-size: 1.6em;
+}
+h2 {
+    font-family: 'trashhandregular', serif;
+    font-size: 3.5em;
+    margin: .5em 0;
+}
+p {
+    line-height: 1.5em;
+    padding: .5rem;
+}
+
 
