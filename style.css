@@ -137,6 +137,9 @@ footer section {
     stroke: var(--crust-orange);
 }
 /*  -------------- TEXT STYLES --------------  */
+nav h2 {
+    visibility: hidden;
+}
 nav a, nav a:link, nav a:visited {
     text-decoration: none;
     color: var(--burnt-brown);
