@@ -77,6 +77,23 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
 }
+.skip-link {
+    position: absolute;
+    left: 50%;
+    transform: translateY(-100%);
+}
+.skip-link {
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+.skip-link:focus {
+    transform: translateY(0%);
+}
 nav {
     margin-top:2rem;
 }

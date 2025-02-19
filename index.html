@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burnt Batch Bakes - A bakery that celebrates the beauty of imperfections in baking. Unique, unpredictable, and unforgettable flavors!">
+    <meta name="keywords" content="bakery, burnt batch, imperfect baking, handmade pastries">
+    <meta name="author" content="Burnt Batch Bakes">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Burnt Batch Bakes - Where Imperfection is Delicious">
+    <meta property="og:description" content="We celebrate the beauty of imperfection with bold, burnt, and unforgettable baked goods!">
+    <meta property="og:image" content="images/burnt-batch-bakes-logo.png">
+    <meta property="og:url" content="https://burntbatchbakes.com">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="style.css">
     <title>Burnt Batch Bakes</title>
 </head>
 <body>
+    <!-- Skip Link for Better Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <img src="images/burnt-batch-bakes-logo.png" alt="burnt batch bakes in brown on orange flames logo">
         <h1>Burnt Batch Bakes</h1>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#" class="active">About Us</a></li>
                 <li><a href="#">Menu</a></li>
@@ -19,17 +32,17 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about-us">
+    <main id="main-content" >
+        <section id="about-us" aria-labelledby="about-heading">
             <img src="images/flaming-muffin.png" alt="close up shot of a muffin in flames in an orange wrapper ">
             <div>
-                <h2>We're still figuring it out</h2>
+                <h2 id="about-heading">We're still figuring it out</h2>
                 <p>Burnt Batch Bakes isn't your average bakery—and that's the point. We celebrate the art of imperfection with bakes that are as unpredictable as they are memorable. From burnt edges to lopsided layers, every item tells a story of chaos, charm, and a little bit of culinary rebellion. Here, flaws aren't failures; they're features.</p>
-                <a href="#">Dive into our chaos</a>
+                <a href="#" aria-label="Explore our menu">Dive into our chaos</a>
             </div>
         </section>
-        <section id="menu">
-            <h2>Check Out Our Best Sellers</h2>
+        <section id="menu" aria-labelledby="menu-heading">
+            <h2 id="menu-heading">Check Out Our Best Sellers</h2>
             <section>
                 <img src="images/almost-cookies.png" alt="5 burnt cookies on a wire rack over an open flame">
                 <h3>Almost Cookies</h3>
@@ -46,13 +59,13 @@
                 <img src="images/misguided-macron.png" alt="extra crispy macrons lined up on a wire cooling rack">
                 <h3>Misguided Macrons</h3>
             </section>
-            <a href="#">See our full menu</a>
+            <a href="#" aria-label="See out full menu">See our full menu</a>
         </section>
-        <section id="special-orders">
+        <section id="special-orders" aria-labelledby="orders-heading">
             <div>
-                <h2>Special Orders <br>For When You Wan It Your Way (Sort Of)</h2>
+                <h2 id="orders-heading">Special Orders <br>For When You Wan It Your Way (Sort Of)</h2>
                 <p>Looking for something unique? We're happy to give it a try, but no promises it'll turn out as planned! Whether it's a custom cake that leans a little left or a batch of cookies with extra character, we'll make sure it's one-of-a-kind.</p>
-                <a href="#">Place an order</a>
+                <a href="#" aria-label="Order custom baked goods">Place an order</a>
             </div>
             <img src="images/special-order.png" alt="8in round cake with carmel drizzle, yellow, orange, and white sprinkles with our signature burnt meringue puffs">
         </section>
@@ -85,8 +98,8 @@
         </section>
     </main>
     <footer>
-        <section id="visit-us">
-            <h2>Visit Us</h2>
+        <section id="visit-us" aria-labelledby="visit-heading">
+            <h2 id="visit-heading">Visit Us</h2>
             <address>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FAF3E0" stroke-linecap="round" stroke-linejoin="round" width="50" height="50" stroke-width="1">
                     <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
@@ -110,8 +123,8 @@
                 </div>
             </address>
         </section>
-        <section id="follow-us">
-            <h2>Follow Us</h2>
+        <section id="follow-us" aria-labelledby="social-heading">
+            <h2 id="social-heading">Follow Us</h2>
             <ul>
                 <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FAF3E0" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" stroke-width="1">
                     <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
