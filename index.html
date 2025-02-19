@@ -21,10 +21,10 @@
     <!-- Skip Link for Better Navigation -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
-    <header>
+    <header role="banner">
         <img src="images/burnt-batch-bakes-logo.png" alt="Burnt Batch Bakes logo: brown text on orange flames">
         <h1>Burnt Batch Bakes</h1>
-        <nav aria-label="Main Navigation">
+        <nav role="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="#about-us" class="active">About Us</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -34,43 +34,43 @@
         </nav>
     </header>
     
-    <main id="main-content">
-        <section id="about-us"  aria-labelledby="about-heading">
+    <main id="main-content" role="main">
+        <section id="about-us" role="region" aria-labelledby="about-heading">
             <h2 id="about-heading">We're still figuring it out</h2>
             <img src="images/flaming-muffin.png" alt="Close-up of a muffin in flames in an orange wrapper">
             <p>Burnt Batch Bakes isn't your average bakery—and that's the point. We celebrate the art of imperfection with bakes that are as unpredictable as they are memorable.</p>
             <a href="#menu" aria-label="Explore our menu">Dive into our chaos</a>
         </section>
         
-        <section id="menu" aria-labelledby="menu-heading">
+        <section id="menu" role="region" aria-labelledby="menu-heading">
             <h2 id="menu-heading">Check Out Our Best Sellers</h2>
-            <section>
+            <section role="article">
                 <img src="images/almost-cookies.png" alt="Five burnt cookies on a wire rack over an open flame">
                 <h3>Almost Cookies</h3>
             </section>
-            <section>
+            <section role="article">
                 <img src="images/maybe-muffin.png" alt="Burnt muffin still smoldering on a wooden platter">
                 <h3>Maybe Muffins</h3>
             </section>
             <a href="#special-orders">See our full menu</a>
         </section>
         
-        <section id="special-orders" aria-labelledby="orders-heading">
+        <section id="special-orders" role="region" aria-labelledby="orders-heading">
             <h2 id="orders-heading">Special Orders - For When You Want It Your Way (Sort Of)</h2>
             <p>Looking for something unique? We're happy to give it a try, but no promises it'll turn out as planned!</p>
             <a href="#contact" aria-label="Order custom baked goods">Place an order</a>
         </section>
     </main>
     
-    <footer>
-        <section id="visit-us" aria-labelledby="visit-heading">
+    <footer role="contentinfo">
+        <section id="visit-us" role="region" aria-labelledby="visit-heading">
             <h2 id="visit-heading">Visit Us</h2>
             <address>
                 <p>123 Bakery Lane North, Phoenix, AZ 85251</p>
                 <p>Phone: <a href="tel:4804180415">480-418-0415</a></p>
             </address>
         </section>
-        <section id="follow-us" aria-labelledby="social-heading">
+        <section id="follow-us" role="region" aria-labelledby="social-heading">
             <h2 id="social-heading">Follow Us</h2>
             <ul>
                 <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
