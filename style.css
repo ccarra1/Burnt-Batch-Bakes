@@ -139,6 +139,9 @@ footer section {
 /*  -------------- TEXT STYLES --------------  */
 nav h2 {
     visibility: hidden;
+    width: 1px;
+    height: 1px;
+
 }
 nav a, nav a:link, nav a:visited {
     text-decoration: none;
