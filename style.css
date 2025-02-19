@@ -83,7 +83,8 @@ body {
     transform: translateY(-100%);
 }
 .skip-link {
-    background: #e77e23;
+    background: var(--burnt-brown);
+    color: var(--wheat-flax);
     height: 30px;
     left: 50%;
     padding: 8px;
