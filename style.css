@@ -101,10 +101,6 @@ nav {
 nav a {
     line-height: 2rem;
 }
-#about-us img {
-    width: 80%;
-    margin: 2rem 0;
-}
 #about-us, #testimonials {
     background-color: var(--wheat-flax);
 }
@@ -221,13 +217,14 @@ address p {
     }
     #about-us img {
         width: 90%;
+        height:auto;
         margin: 1rem 0;
     }
     #about-us, #special-orders {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    #about-us img, #special-orders img {
+    #special-orders img {
         margin: 2rem 0;
     }
     #about-us div, #special-orders div {
