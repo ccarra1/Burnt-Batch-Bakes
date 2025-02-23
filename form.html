@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form-style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="first-name">First Name<span>*</span></label>
+            <input type="text" id="first-name" required>
+        </div>
+        <div>
+            <label for="last-name">Last Name<span>*</span></label>
+            <input type="text" id="last-name" required>
+        </div>
+        <div>
+            <label for="email">Email<span>*</span></label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone<span>*</span></label>
+            <input type="tel" id="phone" required>
+        </div>
+        <fieldset id="preferred-contact">
+        <legend>Preferred Contact Method<span>*</span></legend>
+            <div> 
+                <input type="radio" id="contact-email" name="contact" required >
+                <label for="contact-email">Email</label>
+            </div>
+            <div>
+                <input type="radio" id="contact-text" name="contact" checked required >
+                <label for="contact-text">Text</label>
+            </div>
+            <div>
+                <input type="radio" id="contact-phone" name="contact" required >
+                <label for="contact-phone">Phone</label>
+            </div>
+        </fieldset>
+        <fieldset id="destination">
+            <legend>Destination<span>*</span></legend>
+            <select id="select-destination">
+                <option>Choose</option>
+                <option>Barcelona</option>
+                <option>Granada</option>
+                <option>Ibiza</option>
+                <option>Madrid</option>
+                <option>Majorca</option>
+                <option>Seville</option>
+                <option>Tenerife</option>
+                <option>Valencia</option>
+                <option>Other</option>
+            </select>
+        </fieldset>
+        <fieldset id="travelTime">
+            <legend>Travel Time<span>*</span></legend>
+            <select id="select-travel-time">
+                <option>Choose</option>
+                <option>Fall</option>
+                <option>Winter</option>
+                <option>Spring</option>
+                <option>Summer</option>
+                <option>Flexible</option>
+            </select>
+        </fieldset>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
